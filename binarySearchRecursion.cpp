@@ -4,7 +4,8 @@ using namespace std;
 
 int binarySearch(vector<int> &input, int lo, int hi, int tgt){
 
-    int mid = (lo+hi)/2;
+    // int mid = (lo+hi)/2;         it can create a problem of int overflow
+    int mid = lo + ((hi-lo)/2);
     if(lo > hi) return -1;
 
     if(input[mid] == tgt) return mid;
