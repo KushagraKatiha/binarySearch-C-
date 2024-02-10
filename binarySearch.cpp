@@ -24,11 +24,11 @@ int main(){
     // Implement binary search 
     
     int size; cin>>size;
-    vector<int> input(size);
+    vector<int> input;
 
     for(int i = 0; i < size; i++){
         int element; cin>>element;
-        input[i] = element;
+        input.push_back(element);
     }
 
     // print the input
