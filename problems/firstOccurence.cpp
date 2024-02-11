@@ -20,7 +20,7 @@ int searchFirstOccurence(vector<int> &input, int tgt){
             hi = mid - 1;
         }
     }
-        return ans;
+    return ans;
 }
 
 int main(){
